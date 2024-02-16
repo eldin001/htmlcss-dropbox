@@ -16,9 +16,31 @@
         <nav class="d-flex align-center">
             <ul class="d-flex align-center gap">
                 <li><div class="logo"><img src="img/logo-small.png" alt=""></div></li>
-                <li><a href="#">Perché Dropbox</a></li>
-                <li><a href="#">Funzioni</a></li>
-                <li><a href="#">Piani e Prezzi</a></li>
+                <li><a href="#">Perché Dropbox</a>
+                    <ul class="dropdown" aria-label="submenu">
+                        <li><a href="#">Archivia e proteggi i tuoi file</a></li>
+                        <li><a href="#">Condividi i tuoi contenuti</a></li>
+                        <li><a href="#">Collabora sul tuo lavoro</a></li>
+                        <li><a href="#">Gestisci la tua attività</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Funzioni</a>
+                    <ul class="dropdown" aria-label="submenu">
+                        <li><a href="#">Invio di file di grandi dimensioni</a></li>
+                        <li><a href="#">180 giorni per ripristinare i file eliminati</a></li>
+                        <li><a href="#">Richieste di firma illimitate</a></li>
+                        <li><a href="#">Monitora le visite e le interazioni con i file</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Piani e Prezzi</a>
+                    <ul class="dropdown" aria-label="submenu">
+                        <li><a href="#">Professional</a></li>
+                        <li><a href="#">Advanced</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <ul class="d-flex align-center gap">
                 <li><a href="#">Supporto</a></li>
@@ -34,9 +56,9 @@
                     <div class="left">
                         <ul>
                             <li class="padding-bottom"><p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p></li>
-                            <li class="padding-bottom"><a class="btn blue-btn" href="#">Inizia la tua prova gratuita</a></li>
+                            <li class="padding-bottom"><a class="btn blue-btn" href="#plans">Inizia la tua prova gratuita</a></li>
                             <li class="padding-bottom">Annulla in qualsiasi momento</li>
-                            <li class="padding-bottom"><i class="fa-solid fa-arrow-down fa-2xl"></i></li>
+                            <li class="padding-bottom"><a href="#plans"><i class="fa-solid fa-arrow-down fa-2xl"></i></a></li>
                         </ul>
                 </div>
                     <div class="right"><img src="img/jumbo.png" alt=""></div>
@@ -52,7 +74,7 @@
                 <span><input class="padding-bottom" type="radio" name="fatturazione">Fatturazione annuale</span>
             </div>
             <!-- plans sectiom -->
-            <div class="main-plans-container d-flex space-between">
+            <div id="plans" class="main-plans-container d-flex space-between">
                 <!-- professional plan -->
                 <div class="plans">
                     <div class="top-plans">
