@@ -122,6 +122,10 @@ h1 {
     display: flex;
 }
 
+.column-direction {
+    flex-direction: column;
+}
+
 .align-center {
     align-items: center;
     align-content: center;
@@ -360,6 +364,26 @@ h1 {
 
 /* footer */
 
+footer {
+    background-color: black;
+    color: white;
+}
+
+.top-footer ul::first-line {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.top-footer li:first-child {
+    padding: 50px 0 20px 0;
+}
+
+.footer-padding {
+    padding: 5px 0 5px 0;
+}
+
+
+
 
 
 /* buttons */
@@ -386,7 +410,6 @@ h1 {
 .first-question {
     border-top: 1px solid black;
 }
-
 
 .btn-call {
     display: inline-block;
