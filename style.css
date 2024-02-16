@@ -1,3 +1,4 @@
+/* reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,13 +8,29 @@
 :root {
     --hero-background-color: #B8CEE4;
     --blu-button-color: #2C60F5; 
+    --designit-square-backgroud-color: #ABD09F;
+    --asu-square-background-color: #59192F;
+    --uf-square-background-color: #428FC8;
+    --topps-square-background-color: #EA3E33;
+    --designit-main-square-background-color: #F5F5F5;
+    --world-bicycle-relief-square-background-color: #C22D2F;
+    --hearst-square-background-color: #B8CEE4;
+    --lonely-planet-square-background-color: #1A287B;
+    --clear-channel-square-background-color: #F8D857;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 ul {
     list-style: none;
 }
 
-li > a {
+a {
     text-decoration: none;
 }
 
@@ -21,69 +38,22 @@ a {
     color: black;
 }
 
-nav ul:first-child {
-    padding-left: 30px;
-}
-
-nav ul:last-child {
-    padding-right: 30px;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .d-bug {
     border: 1px solid red
 }
 
-nav {
-	background-color: white;
-    justify-content: space-between;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-    height: 60px;
-	z-index: 1001;
+/* general */
+.inline-box {
+    display: inline-block;
 }
 
-#hero {
-    margin-top: 60px;
-    background-color: var(--hero-background-color) ;
-}
-
-h1 {
-    font-size: 60px;
-    font-weight: 800;
-}
-
-
-.right > img {
-    max-width: 100%;
-}
-
-.right {
-    width: 70%;
-    position: relative;
-    top: 60px;
-}
-
-.left {
-    width: 30%;
-    position: relative;
-    top: 60px;
-}
 
 .padding-bottom {
     padding-bottom: 50px ;
 }
 
 .padding-top {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .small-container {
@@ -94,6 +64,54 @@ h1 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* header */
+
+nav {
+    background-color: white;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1001;
+}
+
+#hero {
+    margin-top: 60px;
+    background-color: var(--hero-background-color) ;
+}
+
+nav ul:first-child {
+    padding-left: 30px;
+}
+
+nav ul:last-child {
+    padding-right: 30px;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.right > img {
+    max-width: 100%;
+}
+
+.right {
+    width: 70%;
+}
+
+.left {
+    width: 30%;
+}
+
+.position {
+    position: relative;
+    top: 70px;
 }
 
 .gap {
@@ -111,10 +129,216 @@ h1 {
     align-content: center;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* section 1 */
+
+.recurring-payments {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.top-padding-heading {
+    padding: 80px 0 40px 0;
+}
+
+.section-title-font-size {
+    font-size: 40px;
+}
+
+.plan-name {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.paddig-recurring {
+    padding: 0 0 60px 20px;
+    color: gray;
+}
+
+.line {
+    width: 20%;
+    border: 1px solid gray;
+    margin-left: 20px;
+}
+
+.small-padding-plans {
+    padding: 20px;
+}
+
+.large-padding-plans-bottom {
+    padding: 20px 0 60px 20px;
+}
+
+.large-padding-plans-top {
+    padding: 60px 0 20px 20px;
+}   
+
+.list-icon-padding {
+    padding-right: 3px;
+}
+
+.plans {
+    border: 1px solid grey;
+    width: calc(100% / 3 - 30px);
+    gap: 15px;
+}
+
+.button-plans-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-plans {
+    width: 100%;
+    display: inline-table;
+    text-align: center;
+    text-decoration: none;
+}
+
+.enterprise-plan {
+    width: 100%;
+    border: 1px solid grey;
+    margin-top: 40px;
+}
+
+/* section 2 */
+
+.second-section-padding-top {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.second-left-section {
+    width: 60%
+}
+
+.second-left-section > img {
+    max-width: 100%;
+}
+
+.second-right-section {
+    width: 40%;
+}
+
+/* section 3 */
+
+.padding-operation {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.font-operation {
+    font-size: 50px;
+}
+
+.card {
+    width: calc(100% / 3 - 30px);
+}
+
+.card > img {
+    width: 100%;
+}
+
+/* section 4 */
+
+.font-business {
+    font-size: 45px;
+}
+
+/* section 5 */
+
+.main-square {
+    width: calc(100% / 3);
+    aspect-ratio: 1 / 1;
+}
+
+.main-square > img {
+    max-width: 50%;
+}
+
+.small-square {
+    width: calc(100% / 2);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-square > img {
+    max-width: 55%;
+    filter: brightness(0) invert(1);
+}
+
+#designit {
+    background-color: var(--designit-square-backgroud-color);
+    color: white;
+}
+
+#asu {
+    background-color: var(--asu-square-background-color);
+}
+
+#uf {
+    background-color: var(--uf-square-background-color);
+}
+
+#topps {
+    background-color: var(--topps-square-background-color);
+}
+
+#designit-main {
+    background-color: var(--designit-main-square-background-color);
+    flex-direction: column;
+}
+
+#bicycle {
+    background-color: var(--world-bicycle-relief-square-background-color);
+}
+
+#hearst {
+    background-color: var(--hearst-square-background-color);
+}
+
+#lonely-planet {
+    background-color: var(--lonely-planet-square-background-color);
+}
+
+#clear-channel {
+    background-color: var(--clear-channel-square-background-color);
+}
+
+.main-square-padding {
+    padding: 20px;
+}
+
+.line-square {
+    margin-left: 20px;
+}
+
+/* section 5 */
+
+
+
 /* buttons */
 
 .btn {
-    padding: 7px 10px;
+    padding: 10px 10px;
     color: white;
 
 }
@@ -122,4 +346,10 @@ h1 {
 .blue-btn {
     background-color: var(--blu-button-color);
     color: white;
+}   
+
+.transparent-btn {
+    border: 1px solid gray;
+    display: inline-block;
+    margin-left: 20px;
 }
