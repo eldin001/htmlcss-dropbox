@@ -25,13 +25,14 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    min-width: 1200px;
 }
 
 ul {
     list-style: none;
 }
 
-a:not(.plans a) {
+a:not(.plans a, .anchor-team) {
     text-decoration: none;
     color: black;
 }
@@ -382,9 +383,16 @@ footer {
     padding: 5px 0 5px 0;
 }
 
+.line-footer {
+    border: 1px solid gray;
+    width: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
-
-
+.footer-icon-padding {
+    padding-right: 10px;
+}
 
 /* buttons */
 
@@ -418,3 +426,33 @@ footer {
     color: black;
     padding: 10px 30px;
 }
+
+/* hover effect */
+
+#designit:hover {
+    border: 15px solid #D4E8CE;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.blue-btn:hover {
+    background-color: #4172f8;
+    transition: all 0.5s;
+}
+
+.btn-call:hover {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    transition: all 0.5s;
+}
+
+.transparent-btn:hover {
+    background-color: #428FC8;
+    color: white;
+    transition: 0.5s;
+}
+
+/* dropdown effect */
+
+
+
