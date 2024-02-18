@@ -33,7 +33,7 @@ ul {
     list-style: none;
 }
 
-nav ul li:hover {
+nav ul li:not(.exclude):hover {
     border-bottom: 1px solid black;
     transition: all 0.5s;
 }
@@ -408,6 +408,7 @@ footer {
     padding-right: 10px;
 }
 
+
 /* buttons */
 
 .btn {
@@ -524,7 +525,7 @@ summary::after {
     content: '';
     width: 0; 
     height: 0; 
-    border-top: 10px solid #15171b;
+    border-top: 10px solid #000000;
     border-inline: 7px solid transparent;
     transition: 0.2s;
 }
