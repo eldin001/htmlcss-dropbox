@@ -164,7 +164,7 @@ h1 {
     padding-bottom: 30px;
     display: flex;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 10px;
 }
 
 .top-padding-heading {
@@ -450,8 +450,51 @@ footer {
     cursor: pointer;
 }
 
+#asu:hover {
+    border: 15px solid #57001f;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#uf:hover{
+    border: 15px solid #0074cd;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#topps:hover {
+    border: 15px solid #dd0f00;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#bicycle:hover {
+    border: 15px solid #c50003;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#hearst:hover {
+    border: 15px solid #72a8df;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#lonely-planet:hover {
+    border: 15px solid #2b45da;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#clear-channel:hover {
+    border: 15px solid #ffcc00;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+
+}
+
 .blue-btn:hover {
-    background-color: #4172f8;
+    background-color: #0030b6;
     transition: all 0.5s;
 }
 
@@ -472,7 +515,6 @@ footer {
 li:not(footer li, nav i ){
   display: block;
   padding: 1rem;
-  position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
 }
@@ -491,12 +533,11 @@ ul li ul {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   visibility: hidden;
   opacity: 0;
-  min-width: 30px;
+  min-width: 100vw;
   position: absolute;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   margin-top: 16px;
   left: 0;
-  display: none;
 }
 
 ul li:hover > ul,
@@ -544,7 +585,7 @@ summary {
     
 details {
     background: #ffffff;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
   
 
